@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bus Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>TRACK MY META!</h1>
+    </header>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Bottom Slide Card -->
+    <div class="bottom-card" id="bottomCard">
+        <div class="bottom-card-header">
+            <h2>Bus Information</h2>
+            <button id="recenterBtn" onclick="recenterMap()">Recenter</button>
+        </div>
+        <div class="bottom-card-content">
+            <div class="bus-select-container">
+                <label for="buses">Select Bus:</label>
+                <select id="buses" onchange="selectBus()">
+                    <option value="1">Meta Bus 1</option>
+                    <option value="2">Meta Bus 2</option>
+                    <option value="3">Meta Bus 3</option>
+                    <option value="4">Meta Bus 4</option>
+                    <option value="5">Meta Bus 5</option>
+                </select>
+            </div>
+            <!-- Removed Driver Details Section -->
+        </div>
+        <footer>
+            <p>&copy; 2024 Banasthali Vidyapith. All rights reserved.</p>
+            <p>Developed by [Your Name/Company]</p>
+            <p>Icons by [Icon Provider]</p>
+        </footer>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTL0G8pgEIsXIoSK61tkwOemBfxjK75_M"></script>
+    <script src="script.js"></script>
+</body>
+</html>

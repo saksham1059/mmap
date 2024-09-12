@@ -1,0 +1,127 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: #1e90ff;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    z-index: 1001;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Map container */
+#map {
+    height: calc(100vh - 100px); /* Adjust the height to leave space for header and bottom card */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Bottom Card */
+.bottom-card {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    height: 150px; /* Adjust height as needed */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bottom Card Header */
+.bottom-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bottom-card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.bottom-card-header button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Bus Selector */
+.bus-select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bus-select-container label {
+    font-size: 1rem;
+}
+
+.bus-select-container select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .bottom-card {
+        padding: 10px;
+        height: 130px; /* Adjust height as needed */
+    }
+
+    .bottom-card-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .bottom-card-header button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
